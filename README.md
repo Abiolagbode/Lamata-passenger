@@ -1,5 +1,5 @@
-# Frourá (PASSENGER)
-A taxi hailing/booking/reservation mobile application for Royal HM Taxi Services Inc. (Thesis)
+# LAMATA (PASSENGER)
+A taxi hailing/booking/reservation mobile application for Lamata Services Inc. (Thesis)
 ## Libraries & Tools
 - CircleImageView by hdodenhof (https://github.com/hdodenhof/CircleImageView)
 - Facebook SDK (https://developers.facebook.com/)
