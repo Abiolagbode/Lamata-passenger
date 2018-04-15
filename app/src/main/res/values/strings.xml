@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LAMATA</string>
+
+    <string name="logoWhite_desc">white logo</string>
+
+    <string name="facebook_app_id">567687756941946</string>
+    <string name="fb_login_protocol_scheme">fb567687756941946</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="registration_note">Please enter your details. Only drivers assigned to you will see them.</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="et_hint_name"><i>Name</i></string>
+    <string name="et_hint_mobNum"><i>Mobile Number</i></string>
+    <string name="et_hint_verification_code">Verification Code</string>
+    <string name="et_hint_pickup">Enter pick-up point</string>
+
+    <string name="txtVw_enter_code">Enter the code sent to:</string>
+    <string name="txtVw_mobNum_placeholder">+234 8176391092</string>
+    <string name="txtVw_edit_number"><u>Edit Number</u></string>
+
+    <string name="btn_verify">Verify</string>
+    <string name="txtVw_request_code_placeholder">Request a new code in 00:60</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

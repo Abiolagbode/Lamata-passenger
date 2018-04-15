@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/pickup_txt_vw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_pin_yellow_24dp"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:text="Lamata is a bus/car booking application around lagos state"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dropoff_txt_vw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_places_black_24dp"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:text="Lagos"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date_txt_vw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawableLeft="@drawable/ic_reservation_black_24dp"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"
+            android:text="April 09, 2018"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time_txt_vw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawableLeft="@drawable/ic_duration_black_24dp"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"
+            android:text="12:29 PM"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

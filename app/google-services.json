@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "968675118860",
+    "firebase_url": "https://lamata-passenger.firebaseio.com",
+    "project_id": "lamata-passenger",
+    "storage_bucket": "lamata-passenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968675118860:android:d3a7908ec3e561e5",
+        "android_client_info": {
+          "package_name": "com.abiola.initiative.lamatapassenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968675118860-n19vnt7kipjj5cd0tcnv9u4dlo0j9vgh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abiola.initiative.lamatapassenger",
+            "certificate_hash": "8a9f508cba6bc41274c50aeae39dd57031b7b8d0"
+          }
+        },
+        {
+          "client_id": "968675118860-p1aa7gvqn8bc3tpv9mhm1gtsu3e0uhvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7z3aIWIOvHi5Zq4G8QoQdLYAznkWfcdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968675118860-p1aa7gvqn8bc3tpv9mhm1gtsu3e0uhvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

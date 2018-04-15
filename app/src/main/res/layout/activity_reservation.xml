@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abiola.initiative.lamatapassenger.ReservationActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/booking_details_card_vw"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/booking_layout"
+                    android:background="@drawable/background_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/pickup_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/iconPickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="0"
+                            android:background="@null"
+                            android:contentDescription="@string/place_autocomplete_search_hint"
+                            android:src="@drawable/ic_pin_yellow_24dp" />
+
+                        <TextView
+                            android:id="@+id/pickup_txt_vw"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="marquee"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:paddingLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingTop="17dp"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Your Pickup"
+                            android:textColor="@color/place_autocomplete_search_hint"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_below="@id/pickup_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:clickable="false"
+                        android:background="#000"/>
+
+                    <LinearLayout
+                        android:id="@+id/dropoff_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pickup_layout"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/iconDropoff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="0"
+                            android:background="@null"
+                            android:src="@drawable/ic_places_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/dropoff_txt_vw"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="marquee"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:paddingLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingTop="17dp"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Your Destination"
+                            android:textColor="@color/place_autocomplete_search_hint"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/booking_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/background_border_sharp"
+                    android:fontFamily="@font/fjalla_one_regular"
+                    android:layout_below="@+id/booking_layout"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:text="BOOK"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

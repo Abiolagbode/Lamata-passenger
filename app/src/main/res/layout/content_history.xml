@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/history_rec_vw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/loading_view_logo"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/logo_black" />
+
+            <ProgressBar
+                android:id="@+id/loading_view_loader"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/loading_txt_vw"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/loading_txt_vw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/loading_view_logo"
+                android:layout_centerHorizontal="true"
+                android:text="Loading..."
+                android:textAlignment="center"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blank_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/blank_view_logo"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/logo_black" />
+
+            <TextView
+                android:id="@+id/blank_view_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/blank_view_logo"
+                android:layout_centerHorizontal="true"
+                android:text="No History Found."
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
